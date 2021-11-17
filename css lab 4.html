@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Table Details">
+    <meta name="keywords" content="HTML, css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table</title>
+
+    <style>
+
+      div{margin: auto; height: 10%; width: 70%;}
+
+      caption{font-family: sans-serif; font-size: large;}
+
+      input{
+       border: 0;
+       outline: 0;
+       background: transparent;
+       border-bottom: 1px solid black;
+      }
+
+      p{
+       padding: 0px 300px;
+       text-decoration: none;
+       float: right;
+      }
+
+      table, td, th {border: 1px solid black;}
+
+      th{height: 30px;}
+
+      td{height: 30px;}
+      
+      table {border-collapse: collapse;  width: 70%; height: 80%;}
+
+
+      .pagination {display: inline-block;}
+
+      .pagination a {color: black; padding: 10px 16px; text-decoration: none;}
+
+      .pagination a.active { background-color: blue; color: white; border-radius: 50%;}
+
+      .pagination a:hover:not(.active) {background-color: gray}
+
+    </style>
+  </head>
+ <body>
+
+    <div>
+
+      <!--Show Entries -->
+
+      <br><br><label style="float: left;">Show <select class=""><option value="2">2</option>
+      <option value="4">4</option><option value="5" selected >5</option></select> entries</label>
+
+      <!-- Searchbar-->
+
+      <p><img src="https://img.icons8.com/ios-glyphs/13/000000/search--v1.png"> <input type="text" placeholder="search..."></input></p>
+
+
+      <!--Table Details-->
+    
+      <table >
+        <caption>Customer <b>Details</b></caption>
+        <thead>
+         <tr>
+           <th style="width: 5%;">#</th>
+           <th>Name<img src="https://img.icons8.com/material-sharp/13/000000/sort.png"/></th>
+           <th>Address</th>
+           <th>City<img src="https://img.icons8.com/material-sharp/13/000000/sort.png"/></th>
+           <th>Pincode</th>
+           <th>Country<img src="https://img.icons8.com/material-sharp/13/000000/sort.png"/></th>
+           <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>&nbsp;1</td>
+            <td>Oliver </td>
+            <td>3 Ings Lane</td>
+            <td>Daventry</td>
+            <td>NN11 2JW</td>
+            <td>USA</td>
+            <td>&nbsp;<img src="https://img.icons8.com/material-sharp/17/4a90e2/visible.png"/>    <img src="https://img.icons8.com/emoji/17/000000/pencil-emoji.png"/>    <img src="https://img.icons8.com/material-sharp/17/fa314a/delete.png"/></td>
+          </tr>
+          <tr>
+            <td>&nbsp;2</td>
+            <td>Harry</td>
+            <td>31 Holburn Lane</td>
+            <td>Helensburgh</td>
+            <td>G84 0ZA</td>
+            <td>Germany</td> 
+            <td>&nbsp;<img src="https://img.icons8.com/material-sharp/17/4a90e2/visible.png"/>    <img src="https://img.icons8.com/emoji/17/000000/pencil-emoji.png"/>    <img src="https://img.icons8.com/material-sharp/17/fa314a/delete.png"/></td>
+          </tr>
+          <tr>
+            <td>&nbsp;3</td>
+            <td>George</td>
+            <td>94 Long Street</td>
+            <td> Millbridge</td>
+            <td>GU10 3BG</td>
+            <td>France</td>
+            <td>&nbsp;<img src="https://img.icons8.com/material-sharp/17/4a90e2/visible.png"/>    <img src="https://img.icons8.com/emoji/17/000000/pencil-emoji.png"/>    <img src="https://img.icons8.com/material-sharp/17/fa314a/delete.png"/></td>
+          </tr>
+          <tr>
+            <td>&nbsp;4</td>
+            <td>Noah</td>
+            <td>22 Brynglas Road</td>
+            <td>Glenfeochan</td>
+            <td>PA34 0LB</td>
+            <td>Spain</td>
+            <td>&nbsp;<img src="https://img.icons8.com/material-sharp/17/4a90e2/visible.png"/>    <img src="https://img.icons8.com/emoji/17/000000/pencil-emoji.png"/>    <img src="https://img.icons8.com/material-sharp/17/fa314a/delete.png"/></td>
+          </tr>
+          <tr>
+            <td>&nbsp;5</td>
+            <td>Jack</td>
+            <td>50 Red Lane</td>
+            <td>Ermington</td>
+            <td>PL21 4AH</td>
+            <td>Italy</td>
+            <td>&nbsp;<img src="https://img.icons8.com/material-sharp/17/4a90e2/visible.png"/>    <img src="https://img.icons8.com/emoji/17/000000/pencil-emoji.png"/>    <img src="https://img.icons8.com/material-sharp/17/fa314a/delete.png"/></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <!--Entries-->
+
+      <br><p1 style="float: left;">Showing 1 to 5 of 5 entries</p1>
+
+      <!--Pagination-->
+   
+      <div class="pagination" style="float: right;">
+        <a href="#">Previous</a>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#"class="active">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">Next</a>
+      </div>
+    </div>
+  </body>
+</html>

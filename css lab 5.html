@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset="UTF-8">
+       <meta name="description" content="Login form">
+       <meta name="keywords" content="HTML, css">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Login Page</title>
+
+        <style>
+ 
+            .left,.right {
+                height: 100%;
+                position: fixed;
+                top: 8%;
+                overflow-x: hidden;
+                padding-top: 20px;
+            }
+
+            h3{
+                color: white;
+            }
+
+            .left {
+                left: 0;
+                background-color: black;
+                width: 60%;
+            }
+
+            .right {
+                right: 0;
+                background-color: rgb(126, 219, 126);
+                width: 40%;
+            }
+
+            input{
+                border: 0;
+                outline: 0;
+                background: transparent;
+                border-bottom: 1px solid black;
+                padding-right: 80px;
+            }
+
+            button {
+                background-color: whitesmoke; 
+                color: green; 
+                font-size: 10px; 
+                padding: 8px 10px; 
+                padding-right: 90px;
+                display: inline-block;
+            }
+
+            button.a {
+                background-color: rgb(126, 219, 126);
+                color: white;
+                margin: auto;
+                padding: 10px;
+                padding-right: 20px;
+            }
+
+            form{
+                text-align: center; padding-top: 240px;
+            }
+
+            div.a{
+                color: white;
+                text-align: center;
+                width: 400px;
+                padding: 50px;
+                margin: 60px;
+            }
+
+            div.b{
+                color: white;
+                text-align: center;
+                font-size: small;
+                padding-right: 50px;
+            }
+
+            .dot {
+                height: 25px;
+                width: 25px;
+                background-color: red;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .dot1 {
+                height: 25px;
+                width: 25px;
+                background-color: yellow;
+                border-radius: 50%;
+                display: inline-block;
+            }
+
+            .dot2 {
+                height: 25px;
+                width: 25px;
+                background-color: green;
+                border-radius: 50%;
+                display: inline-block;
+            }
+        </style>
+    </head>
+    
+    <body>
+        
+        <!--The colored dots--> 
+
+        <div style="text-align:top">
+            <span class="dot"></span>
+            <span class="dot1"></span>
+            <span class="dot2"></span>
+        </div>
+              
+        <!--Left side of splited-->
+
+        <div class="left">
+            <div class="a">
+                
+
+                <h1>WELCOME HOME TO CHICAGO</h1>
+                <h2>DIVERSE, INNOVATIVE, WORLD CLASS</h2>
+                <p style="font-size: small;">Home isn’t just a place — it’s a feeling. And in Chicago, you’ll fit right in 
+                    no matter who you are or what you love. Come explore the city that feels like home.
+                </p>
+
+                <button class="a" type="submit">REGISTER HERE</button>
+            </div>
+
+            <div class="b">
+                <b>CHOOSE LANGUAGE</b>&nbsp;&nbsp;
+                <b>HELP CENTER</b>&nbsp;&nbsp;
+                <b>CHICAGO WEBSITE</b>&nbsp;&nbsp;
+                <b>CHICAGO WEBSHOP</b>
+            </div>
+        </div>
+        
+             <!--Right side of splited-->
+
+        <div class="right">
+            <form>
+
+                <div class="container">
+                    <h3>Or login to your account</h3>
+                      
+                    <input type="text" placeholder="Your email" name="email" required><br><br>
+                  
+                    <input type="password" placeholder=" Password" name="psw" required><br><br>
+                          
+                    <button type="submit">Login</button>&nbsp;
+                    <span class="psw">Forgot password?</a></span>
+                      
+                </div>
+                                      
+            </form>
+
+        </div>
+           
+
+    </body>
+</html>
